@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "دونگی",
+      "hasCanvas": false,
+      "bodyTextLen": 132,
+      "bodyTextHash": "a8471037660d00180e1dad4a11f7fbb7c23f25d37d1db4044836715ce44b1c4d",
+      "bodyTextPrefix": "DONGI دونگی هزینه‌ها را بنویس. دونگ را دونگی حساب می‌کند. شمال، ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "دونگی",
+      "hasCanvas": false,
+      "bodyTextLen": 132,
+      "bodyTextHash": "a8471037660d00180e1dad4a11f7fbb7c23f25d37d1db4044836715ce44b1c4d",
+      "bodyTextPrefix": "DONGI دونگی هزینه‌ها را بنویس. دونگ را دونگی حساب می‌کند. شمال، ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,165 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: #0c0c0b;
+  --color-foreground: #f3f1ea;
+  --color-card: #161614;
+  --color-card-2: #1c1c19;
+  --color-muted: #8a8780;
+  --color-subtle: #5c5a55;
+  --color-primary: #ece7dc;
+  --color-primary-foreground: #141412;
+  --color-border: rgb(243 241 234 / 10%);
+  --color-ring: #ece7dc;
+  --color-owe: #c47a62;
+  --color-owed: #8aa384;
+  --color-overlay: rgb(8 8 7 / 64%);
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 1.75rem;
+
+  --shadow-border: 0 0 0 1px rgb(255 255 255 / 8%);
+  --shadow-border-hover: 0 0 0 1px rgb(255 255 255 / 13%);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  body {
+    min-height: 100dvh;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stagger-in,
+  .stagger-in > * {
+    animation: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.stagger-in > * {
+  animation: rise-in 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.stagger-in > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.stagger-in > *:nth-child(2) {
+  animation-delay: 40ms;
+}
+.stagger-in > *:nth-child(3) {
+  animation-delay: 80ms;
+}
+.stagger-in > *:nth-child(4) {
+  animation-delay: 120ms;
+}
+.stagger-in > *:nth-child(5) {
+  animation-delay: 160ms;
+}
+.stagger-in > *:nth-child(6) {
+  animation-delay: 200ms;
+}
+.stagger-in > *:nth-child(7) {
+  animation-delay: 240ms;
+}
+.stagger-in > *:nth-child(8) {
+  animation-delay: 280ms;
+}
+
+.keypad-btn {
+  min-height: 3.5rem;
+  border-radius: 1.25rem;
+  background: var(--color-card-2);
+  color: var(--color-foreground);
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition:
+    transform 150ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 150ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.keypad-btn:active {
+  transform: scale(0.96);
+  background: #252521;
+}
+
+.tone-0 {
+  background: #3d4a40;
+  color: #d7e2d6;
+}
+.tone-1 {
+  background: #4a3d38;
+  color: #ecd9d1;
+}
+.tone-2 {
+  background: #3a4248;
+  color: #d5dee4;
+}
+.tone-3 {
+  background: #454338;
+  color: #e8e4cf;
+}
+.tone-4 {
+  background: #403848;
+  color: #ddd4e6;
+}
+.tone-5 {
+  background: #384843;
+  color: #d4e6df;
+}
+.tone-6 {
+  background: #483838;
+  color: #e6d4d4;
+}
+.tone-7 {
+  background: #3c3c3c;
+  color: #e2e2e0;
+}
